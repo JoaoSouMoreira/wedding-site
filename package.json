@@ -1,0 +1,41 @@
+{
+  "name": "wedding-site-joao-isabel",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoSouMoreira/wedding-site.git"
+  },
+  "author": "Joao Moreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoaoSouMoreira/wedding-site/issues"
+  },
+  "homepage": "https://github.com/JoaoSouMoreira/wedding-site#readme",
+  "scripts": {
+    "build:dev": "webpack --watch --env.NODE_ENV=development",
+    "start:dev": "node_modules/.bin/browser-refresh ./public/server.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.11.1",
+    "browser-refresh": "^1.7.3",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^2.0.0",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^3.8.1",
+    "webpack-node-externals": "^1.2.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "express": "^4.14.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-hot-loader": "^4.3.5"
+  }
+}
