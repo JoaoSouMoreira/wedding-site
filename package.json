@@ -13,12 +13,12 @@
   },
   "homepage": "https://github.com/JoaoSouMoreira/wedding-site#readme",
   "scripts": {
-    "build:dev": "webpack --watch --env.NODE_ENV=development",
-    "start:dev": "node_modules/.bin/browser-refresh ./public/server.js"
+    "start:dev": "webpack --watch --env.NODE_ENV=development & node_modules/.bin/browser-refresh ./public/server.js"
   },
   "devDependencies": {
     "babel-core": "^6.10.4",
     "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.11.1",
     "browser-refresh": "^1.7.3",
@@ -34,6 +34,7 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "express": "^4.14.0",
+    "moment": "^2.22.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-hot-loader": "^4.3.5"

@@ -43,7 +43,10 @@ module.exports = env => {
                     test: /\.js$/,
                     exclude: /node_modules/,
                     loader: 'babel-loader',
-                    query: { presets: ['react'] }
+                    query: { 
+                        presets: ['react'],
+                        plugins: ['babel-plugin-transform-class-properties']
+                     }
                 },
                 {
                     test: /\.(ttf|eot|otf|svg|png)$/,
