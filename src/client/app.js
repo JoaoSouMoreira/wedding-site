@@ -1,6 +1,18 @@
 import React from 'react';
-import { render } from 'react-dom';
+import { hot } from 'react-hot-loader';
+import { Route, Switch } from 'react-router-dom';
 
-import Main from './main';
+import HomePage from '../pages/home';
+import ViajarPage from '../pages/viajar';
 
-render(<Main/>, document.getElementById('main'));
+class App extends React.Component {
+
+    render() {
+        return <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route exact path="/viajar" component={ViajarPage} />
+        </Switch>;
+    }
+}
+
+export default hot(module)(App);

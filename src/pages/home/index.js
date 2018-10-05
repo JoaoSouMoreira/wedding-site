@@ -1,12 +1,12 @@
 import React from 'react';
-import { hot } from 'react-hot-loader';
 import * as moment from 'moment';
 
-import NavigationBar from '../components/navbar'; 
+import NavigationBar from '../../client/components/navbar';
+import WeddingHeader from '../../client/components/header';
 
-import styles from './main.css';
+import styles from './home.css';
 
-class Main extends React.Component {
+class HomePage extends React.Component {
 
     constructor(props) {
         super(props);
@@ -16,8 +16,6 @@ class Main extends React.Component {
             counter: '',
             photoNumber: Math.floor(Math.random() * 3) + 1,
         };
-
-        this.getTimeLeft = this.getTimeLeft.bind(this);
     }
     
     componentDidMount() {
@@ -27,8 +25,7 @@ class Main extends React.Component {
         }, 1000);
     }
 
-    getTimeLeft() {
-        console.log(`test`); 
+    getTimeLeft = () => {
         const days = this.state.weddingDate.diff(moment(), 'days');
         const hours = this.state.weddingDate.diff(moment(), 'hours');
         const minutes = this.state.weddingDate.diff(moment(), 'minutes');
@@ -40,11 +37,7 @@ class Main extends React.Component {
         return <div className={styles.container}>
             <NavigationBar></NavigationBar>
             <div className={styles.content}>
-                <div>
-                    <h3>Casamento de</h3>
-                    <h1>Isabel & Joāo </h1>
-                    <h5>Sāo Miguel, Açores</h5>
-                </div>
+                <WeddingHeader></WeddingHeader>
                 <img className={styles.image} src={`/assets/${this.state.photoNumber}.jpg`} />
                 <p>Bem-vindo(s) á página oficial do nosso casamento.</p>
                 <span>{ this.state.counter }</span>
@@ -53,4 +46,4 @@ class Main extends React.Component {
     }
 }
 
-export default hot(module)(Main);
+export default HomePage;

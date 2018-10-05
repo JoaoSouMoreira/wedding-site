@@ -17,15 +17,6 @@ html {
     flex-grow: 2;
 }
 
-.content h1 {
-    font-size: 70px; 
-}
-
-.content h1, .content h3, .content h5 {
-    text-align: center;
-    margin: 5px 0;
-}
-
 .content p {
     margin-left: 8px;
 }
