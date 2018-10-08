@@ -3,7 +3,7 @@ import React from 'react';
 import NavigationBar from '../../client/components/navbar';
 import WeddingHeader from '../../client/components/header';
 
-import baseStyles from './home.css';
+import baseStyles from '../home/home.css';
 
 class PedidoPage extends React.Component {
 

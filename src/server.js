@@ -1,3 +1,4 @@
+import compression from 'compression';
 import express from 'express';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
@@ -10,6 +11,7 @@ const port = 3000;
 const server = express();
 
 server.use(express.static('public'));
+server.use(compression());
 
 server.get('*', (req, res) => {
 
