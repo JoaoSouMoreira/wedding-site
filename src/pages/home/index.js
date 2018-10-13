@@ -34,13 +34,15 @@ class HomePage extends React.Component {
     }
 
     render() {
-        return <div className={styles.container}>
+        return <div className={styles.main}>
+            <WeddingHeader></WeddingHeader>
+            <div className={styles.container}>
             <NavigationBar></NavigationBar>
-            <div className={styles.content}>
-                <WeddingHeader></WeddingHeader>
-                <img className={styles.image} src={`/assets/${this.state.photoNumber}.jpg`} />
-                <p>Bem-vindo(s) á página oficial do nosso casamento.</p>
-                <span>{ this.state.counter }</span>
+                <div className={styles.content}>
+                    <img className={styles.image} src={`/assets/${this.state.photoNumber}.jpg`} />
+                    <p>Bem-vindo(s) á página oficial do nosso casamento.</p>
+                    <span>{ this.state.counter }</span>
+                </div>
             </div>
         </div>;
     }

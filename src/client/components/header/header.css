@@ -1,10 +1,5 @@
-.h1 {
-    font-size: 70px;
-    text-align: center;
-    margin: 5px 0;
-}
-
-.subheader {
-    text-align: center;
-    margin: 5px 0;
+.banner {
+    display: block;
+    width: 600px;
+    margin: auto;
 }

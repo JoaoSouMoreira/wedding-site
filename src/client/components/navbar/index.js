@@ -31,7 +31,9 @@ class NavigationBar extends React.Component {
                     <NavLink to={navItem.href}>{ navItem.title }</NavLink>
                 </li>));
 
-        return <ul className={styles.items}>{ navElements }</ul>;
+        return <div className={styles.navbar}>
+            <ul className={styles.items}>{ navElements }</ul>
+        </div>;
     }
 }
 
