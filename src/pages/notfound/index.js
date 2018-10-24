@@ -1,6 +1,7 @@
 import React from 'react';
 
 import NavigationBar from '../../client/components/navbar';
+import WeddingFooter from '../../client/components/footer';
 import WeddingHeader from '../../client/components/header';
 
 import baseStyles from '../home/home.css';
@@ -16,6 +17,7 @@ class NotFoundPage extends React.Component {
                     <h1>Página não encontrada</h1>
                 </div>
             </div>
+            <WeddingFooter></WeddingFooter>
         </div>;
     }
 }

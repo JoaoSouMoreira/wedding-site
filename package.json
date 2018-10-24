@@ -13,6 +13,7 @@
   },
   "homepage": "https://github.com/JoaoSouMoreira/wedding-site#readme",
   "scripts": {
+    "clean": "rm ./public/bundle.css ./public/bundle.css.map ./public/server.js ./public/server.js.map",
     "start:dev": "webpack --watch --env.NODE_ENV=development & node_modules/.bin/browser-refresh ./public/server.js"
   },
   "devDependencies": {

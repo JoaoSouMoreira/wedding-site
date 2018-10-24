@@ -2,6 +2,7 @@ import React from 'react';
 import * as moment from 'moment';
 
 import NavigationBar from '../../client/components/navbar';
+import WeddingFooter from '../../client/components/footer';
 import WeddingHeader from '../../client/components/header';
 
 import styles from './home.css';
@@ -44,6 +45,7 @@ class HomePage extends React.Component {
                     <span>{ this.state.counter }</span>
                 </div>
             </div>
+            <WeddingFooter></WeddingFooter>
         </div>;
     }
 }

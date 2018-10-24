@@ -1,6 +1,7 @@
 import React from 'react';
 
 import NavigationBar from '../../client/components/navbar';
+import WeddingFooter from '../../client/components/footer';
 import WeddingHeader from '../../client/components/header';
 
 import baseStyles from '../home/home.css';
@@ -38,6 +39,7 @@ class HistoriaPage extends React.Component {
                     <p><b>13 anos depois de estarmos juntos, vamos finalmente casar!</b></p>
                 </div>
             </div>
+            <WeddingFooter></WeddingFooter>
         </div>;
     }
 }

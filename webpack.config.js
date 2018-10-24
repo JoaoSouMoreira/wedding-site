@@ -13,6 +13,7 @@ module.exports = env => {
         },
         target: 'node',
         externals: nodeExternals(),
+        devtool: 'source-map',
         plugins: [
             new webpack.DefinePlugin({
                 'process.env.NODE_ENV': `'${env.NODE_ENV}'`

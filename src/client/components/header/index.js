@@ -6,7 +6,7 @@ class WeddingHeader extends React.Component {
 
     render() {
         return <div>
-            <img className={styles.banner} src="/assets/banner1.png" />
+            <img className={styles.banner} src="/assets/banner.jpg" />
         </div>;
     }
 }
