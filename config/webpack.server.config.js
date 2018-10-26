@@ -7,16 +7,18 @@ module.exports = env => {
     return {
         entry: './src/server.js',
         output: {
-            path: path.resolve(__dirname, 'public'),
+            path: path.resolve(__dirname, '..', 'public'),
             filename: 'server.js',
             publicPath: '/'
         },
         target: 'node',
         externals: nodeExternals(),
-        devtool: 'source-map',
         plugins: [
             new webpack.DefinePlugin({
-                'process.env.NODE_ENV': `'${env.NODE_ENV}'`
+                'process.env':  {
+                    NODE_ENV: `'${env.NODE_ENV}'`,
+                    PLATFORM: JSON.stringify('server')
+                } 
             }),
             new ExtractTextPlugin({
                 filename: 'bundle.css',
