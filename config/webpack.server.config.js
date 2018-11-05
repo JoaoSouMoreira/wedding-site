@@ -3,8 +3,11 @@ const nodeExternals = require('webpack-node-externals');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+const baseConfig = require('./webpack.base.config');
+
 module.exports = env => {
     return {
+        ...baseConfig,
         name: 'server',
         entry: './src/server.js',
         output: {
@@ -24,37 +27,5 @@ module.exports = env => {
                 allChunks: true
             })
         ],
-        module: {
-            loaders: [
-                {
-                    test: /\.css$/,
-                    exclude: /node_modules/,
-                    use: ExtractTextPlugin.extract({
-                        use: [
-                            {
-                                loader: 'css-loader',
-                                query: {
-                                    localIdentName: '[hash:8]',
-                                    modules: true
-                                }
-                            }
-                        ]
-                    })
-                },
-                {
-                    test: /\.js$/,
-                    exclude: /node_modules/,
-                    loader: 'babel-loader',
-                    query: { 
-                        presets: ['react'],
-                        plugins: ['babel-plugin-transform-class-properties']
-                     }
-                },
-                {
-                    test: /\.(ttf|eot|otf|svg|png)$/,
-                    loader: 'file-loader'
-                },
-            ]
-        }
     }
 };
