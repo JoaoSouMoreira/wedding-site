@@ -5,20 +5,19 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = env => {
     return {
+        name: 'server',
         entry: './src/server.js',
         output: {
             path: path.resolve(__dirname, '..', 'public'),
             filename: 'server.js',
-            publicPath: '/'
+            publicPath: '/',
         },
         target: 'node',
-        externals: nodeExternals(),
+        externals: [nodeExternals()],
         plugins: [
             new webpack.DefinePlugin({
-                'process.env':  {
-                    NODE_ENV: `'${env.NODE_ENV}'`,
-                    PLATFORM: JSON.stringify('server')
-                } 
+                NODE_ENV: `'${env.NODE_ENV}'`,
+                PLATFORM: JSON.stringify('server')
             }),
             new ExtractTextPlugin({
                 filename: 'bundle.css',

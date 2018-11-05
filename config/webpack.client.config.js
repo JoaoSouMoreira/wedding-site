@@ -1,33 +1,41 @@
 const webpack = require('webpack');
-const nodeExternals = require('webpack-node-externals');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-module.exports = env => {
+const srcPath = path.resolve(__dirname, '..', 'src');
+const publicPath = path.resolve(__dirname, '..', 'public');
+
+module.exports = () => {
     return {
-        entry: './src/client/index.js',
+        entry: path.resolve(srcPath, 'client/index.js'),
         output: {
-            path: path.resolve(__dirname, '..', 'public'),
-            filename: 'app.js',
+            path: publicPath,
+            filename: 'bundle.js',
             publicPath: '/'
         },
         devServer: {
-            contentBase: path.resolve(__dirname, '..', 'src/client'),
-            publicPath: '/public/'
+            contentBase: publicPath,
+            publicPath: '/'
         },
         devtool: 'source-map',
-        externals: nodeExternals(),
         plugins: [
             new webpack.DefinePlugin({
-                'process.env':  {
-                    NODE_ENV: `'${env.NODE_ENV}'`,
-                    PLATFORM: JSON.stringify('client')
-                } 
+                PLATFORM: JSON.stringify('client')
             }),
             new ExtractTextPlugin({
                 filename: 'bundle.css',
                 allChunks: true
-            })
+            }),
+            new CopyWebpackPlugin([
+                {
+                    from: path.resolve(srcPath, 'client/index.html'),
+                    to: path.resolve(publicPath, 'index.html')
+                }
+            ]),
+            new webpack.ProvidePlugin({
+                "React": "react",
+            }),
         ],
         module: {
             loaders: [
@@ -50,13 +58,13 @@ module.exports = env => {
                     test: /\.js$/,
                     exclude: /node_modules/,
                     loader: 'babel-loader',
-                    query: { 
+                    query: {
                         presets: ['react'],
                         plugins: ['babel-plugin-transform-class-properties']
-                     }
+                    }
                 },
                 {
-                    test: /\.(ttf|eot|otf|svg|png)$/,
+                    test: /\.(ttf|eot|otf|svg|png|jpg|html)$/,
                     loader: 'file-loader'
                 },
             ]

@@ -1,0 +1,29 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+}
+
+.photos {
+    flex-basis: 60%;
+}
+
+.description {
+    flex-basis: 40%;
+    margin-top: 10px;
+}
+
+.image { 
+    width: 250px;
+    margin: 10px;
+}
+
+.image:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.disabled {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    opacity: 0.5;
+}

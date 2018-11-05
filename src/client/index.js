@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import App from './app';
 
-process.env.PLATFORM === 'server' ?
+PLATFORM === 'server' ?
 hydrate(
     <BrowserRouter>
         <App/>

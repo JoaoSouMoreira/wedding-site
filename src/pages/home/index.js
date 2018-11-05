@@ -41,8 +41,7 @@ class HomePage extends React.Component {
             <NavigationBar></NavigationBar>
                 <div className={styles.content}>
                     <img className={styles.image} src={`/assets/${this.state.photoNumber}.jpg`} />
-                    <p>Bem-vindo(s) á página oficial do nosso casamento.</p>
-                    <span>{ this.state.counter }</span>
+                    <p>Bem-vindo(s) à página oficial do nosso casamento.</p>
                 </div>
             </div>
             <WeddingFooter></WeddingFooter>

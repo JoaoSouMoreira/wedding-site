@@ -15,7 +15,7 @@ class ContactosPage extends React.Component {
                 <NavigationBar></NavigationBar>
                 <div className={baseStyles.content}>
                     <h1>Contactos</h1>
-                    <p>Qualquer dúvida contactem-nos através do email isabeljoao@omelhorcasamentode2019.com ou enviem-nos uma mensagem para o WhatsApp (número inglês; os número portugueses não estão activos) ou Messenger.</p>
+                    <p>Qualquer dúvida contactem-nos através do email <a href="mailto:isabeljoao@omelhorcasamentode2019.com">isabeljoao@omelhorcasamentode2019.com</a> ou enviem-nos uma mensagem para o WhatsApp (número inglês; os número portugueses não estão activos) ou Messenger.</p>
                 </div>
             </div>
             <WeddingFooter></WeddingFooter>
