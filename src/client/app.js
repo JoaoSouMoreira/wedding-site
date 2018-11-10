@@ -3,13 +3,16 @@ import { hot } from 'react-hot-loader';
 import { Route, Switch } from 'react-router-dom';
 
 import BrevementePage from '../pages/brevemente';
+import CasamentoPage from '../pages/casamento';
 import ContactosPage from '../pages/contactos';
+import EstadiaPage from '../pages/estadia';
 import FotosPage from '../pages/fotos';
 import GangMadrinhalPage from '../pages/gang-madrinhal';
 import HistoriaPage from '../pages/historia';
 import HomePage from '../pages/home';
 import NotFoundPage from '../pages/notfound';
 import PedidoPage from '../pages/pedido';
+import SugestoesPage from '../pages/sugestoes';
 import ViajarPage from '../pages/viajar';
 
 class App extends React.Component {
@@ -22,9 +25,9 @@ class App extends React.Component {
             <Route exact path="/nossa-historia" component={HistoriaPage} />
             <Route exact path="/gang-madrinhal" component={GangMadrinhalPage} />
             <Route exact path="/padrinho" component={BrevementePage} />
-            <Route exact path="/casamento" component={BrevementePage} />
-            <Route exact path="/estadia" component={BrevementePage} />
-            <Route exact path="/sugestoes" component={BrevementePage} />
+            <Route exact path="/casamento" component={CasamentoPage} />
+            <Route exact path="/estadia" component={EstadiaPage} />
+            <Route exact path="/sugestoes" component={SugestoesPage} />
             <Route exact path="/fotos" component={FotosPage} />
             <Route exact path="/contactos" component={ContactosPage} />
             <Route exact path="/rsvp" component={BrevementePage} />

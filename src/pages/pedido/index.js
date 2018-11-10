@@ -5,6 +5,7 @@ import WeddingFooter from '../../client/components/footer';
 import WeddingHeader from '../../client/components/header';
 
 import baseStyles from '../home/home.css';
+import styles from './pedido.css';
 
 class PedidoPage extends React.Component {
 
@@ -14,6 +15,7 @@ class PedidoPage extends React.Component {
             <div className={baseStyles.container}>
                 <NavigationBar></NavigationBar>
                 <div className={baseStyles.content}>
+                    <img className={styles.banner} src="/assets/pedido.jpg" />
                     <h2>O Pedido</h2>
                     <h5>Data: 3 de Março de 2017 (01:50, AM)</h5>
                     <h5>Local: Praia do Pópulo, São Miguel (Açores)</h5>

@@ -3,6 +3,10 @@ import React from 'react';
 import NavigationBar from '../../client/components/navbar';
 import WeddingFooter from '../../client/components/footer';
 import WeddingHeader from '../../client/components/header';
+import MartaText from './marta';
+import RaquelText from './raquel';
+import SilviaText from './silvia';
+import SofiaText from './sofia';
 
 import baseStyles from '../home/home.css';
 import styles from './gang-madrinhal.css';
@@ -18,16 +22,11 @@ class GangMadrinhalPage extends React.Component {
             selectedIndex: null
         };
 
-        this.descriptions = [
-            { title: 'Raquel Castanho', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac porta leo. Suspendisse quis dignissim tellus. Donec non metus a tellus lacinia blandit id ac ex. Donec commodo orci tortor, at vulputate sapien commodo ut. Curabitur egestas ante sed auctor pulvinar. Mauris orci felis, pellentesque et augue eu, molestie consectetur leo. Proin ac suscipit est. In hac habitasse platea dictumst. Mauris vel condimentum odio. Phasellus tempus metus metus, non ullamcorper urna tempus vitae. Curabitur in posuere arcu, eget tempor sem.'},
-            { title: 'Sofia Cunha', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac porta leo. Suspendisse quis dignissim tellus. Donec non metus a tellus lacinia blandit id ac ex. Donec commodo orci tortor, at vulputate sapien commodo ut. Curabitur egestas ante sed auctor pulvinar. Mauris orci felis, pellentesque et augue eu, molestie consectetur leo. Proin ac suscipit est. In hac habitasse platea dictumst. Mauris vel condimentum odio. Phasellus tempus metus metus, non ullamcorper urna tempus vitae. Curabitur in posuere arcu, eget tempor sem.'},
-            { title: 'Sílvia Lopes', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac porta leo. Suspendisse quis dignissim tellus. Donec non metus a tellus lacinia blandit id ac ex. Donec commodo orci tortor, at vulputate sapien commodo ut. Curabitur egestas ante sed auctor pulvinar. Mauris orci felis, pellentesque et augue eu, molestie consectetur leo. Proin ac suscipit est. In hac habitasse platea dictumst. Mauris vel condimentum odio. Phasellus tempus metus metus, non ullamcorper urna tempus vitae. Curabitur in posuere arcu, eget tempor sem.'},
-            { title: 'Marta Mourāo', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac porta leo. Suspendisse quis dignissim tellus. Donec non metus a tellus lacinia blandit id ac ex. Donec commodo orci tortor, at vulputate sapien commodo ut. Curabitur egestas ante sed auctor pulvinar. Mauris orci felis, pellentesque et augue eu, molestie consectetur leo. Proin ac suscipit est. In hac habitasse platea dictumst. Mauris vel condimentum odio. Phasellus tempus metus metus, non ullamcorper urna tempus vitae. Curabitur in posuere arcu, eget tempor sem.'},
-        ];
+        this.components = [RaquelText, SofiaText, SilviaText, MartaText];
     }
 
     getPhotoElements() {
-        return this.descriptions.map((description, index) => {
+        return this.components.map((component, index) => {
             const classes = [styles.image];
             if (this.state.selectedIndex !== null && index !== this.state.selectedIndex)
                 classes.push(styles.disabled)
@@ -49,10 +48,7 @@ class GangMadrinhalPage extends React.Component {
     render() {
         const { selectedIndex } = this.state;
         const descriptionElement = selectedIndex !== null ? 
-            <div className={styles.description}>
-                <h3>{this.descriptions[selectedIndex].title}</h3>
-                <p>{this.descriptions[selectedIndex].text}</p>
-            </div> :
+            React.createElement(this.components[selectedIndex], {}) :
             <div className={styles.description}></div>;
 
         return <div className={baseStyles.main}>

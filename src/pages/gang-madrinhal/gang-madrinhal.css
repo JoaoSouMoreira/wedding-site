@@ -27,3 +27,15 @@
     -webkit-filter: grayscale(100%);
     opacity: 0.5;
 }
+
+.descriptionImage {
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.imageSmall {
+    width: 200px;
+    display: block;
+    margin: auto;
+}

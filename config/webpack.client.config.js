@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 const baseConfig = require('./webpack.base.config.js');
 
 const srcPath = path.resolve(__dirname, '..', 'src');
@@ -22,6 +23,7 @@ module.exports = () => {
         },
         devtool: 'source-map',
         plugins: [
+            new Dotenv(),
             new webpack.DefinePlugin({
                 PLATFORM: JSON.stringify('client')
             }),

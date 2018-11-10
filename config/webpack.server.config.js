@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const nodeExternals = require('webpack-node-externals');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 const baseConfig = require('./webpack.base.config');
 
@@ -18,6 +19,7 @@ module.exports = env => {
         target: 'node',
         externals: [nodeExternals()],
         plugins: [
+            new Dotenv(),
             new webpack.DefinePlugin({
                 NODE_ENV: `'${env.NODE_ENV}'`,
                 PLATFORM: JSON.stringify('server')
