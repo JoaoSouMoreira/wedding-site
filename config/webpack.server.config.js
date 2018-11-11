@@ -3,8 +3,10 @@ const nodeExternals = require('webpack-node-externals');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
+const PrerenderSPAPlugin = require('prerender-spa-plugin');
 
 const baseConfig = require('./webpack.base.config');
+const routes = require('../src/client/routes').routes.map((route) => route.path);
 
 module.exports = env => {
     return {
@@ -27,6 +29,10 @@ module.exports = env => {
             new ExtractTextPlugin({
                 filename: 'bundle.css',
                 allChunks: true
+            }),
+            new PrerenderSPAPlugin({
+                staticDir: path.join(__dirname, '..', 'public'),
+                routes,
             })
         ],
     }
