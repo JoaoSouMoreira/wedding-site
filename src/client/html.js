@@ -7,7 +7,6 @@ const Html = ({ body, title }) => `
     </head>
     <body style="margin:0">
       <div id="main">${body}</div>
-      <script type="application/javascript" src="${process.env.BROWSER_REFRESH_URL}"></script>
       <script type="application/javascript" src="/bundle.js"></script>
     </body>
   </html>
