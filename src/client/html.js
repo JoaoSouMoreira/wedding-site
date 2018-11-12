@@ -2,7 +2,9 @@ const Html = ({ body, title }) => `
   <!DOCTYPE html>
   <html>
     <head>
+      <meta charset="UTF-8">
       <title>${title}</title>
+      <link rel="icon" href="favicon.ico" type="image/x-icon" />
       <link rel="stylesheet" type="text/css" href="/bundle.css">
     </head>
     <body style="margin:0">
