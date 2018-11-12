@@ -1,13 +1,15 @@
 import React from 'react';
 import * as moment from 'moment';
 
+import BasePage from '../base';
 import NavigationBar from '../../client/components/navbar';
 import WeddingFooter from '../../client/components/footer';
 import WeddingHeader from '../../client/components/header';
 
+import strings from '../../client/localizations';
 import styles from './home.css';
 
-class HomePage extends React.Component {
+class HomePage extends BasePage {
 
     constructor(props) {
         super(props);
@@ -36,12 +38,12 @@ class HomePage extends React.Component {
 
     render() {
         return <div className={styles.main}>
-            <WeddingHeader></WeddingHeader>
+            <WeddingHeader setLanguage={this.setLanguage.bind(this)}></WeddingHeader>
             <div className={styles.container}>
             <NavigationBar></NavigationBar>
                 <div className={styles.content}>
                     <img className={styles.image} src={`/assets/${this.state.photoNumber}.jpg`} />
-                    <p>Bem-vindo(s) à página oficial do nosso casamento.</p>
+                    <p>{strings.homeText}</p>
                 </div>
             </div>
             <WeddingFooter></WeddingFooter>

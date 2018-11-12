@@ -2,6 +2,7 @@ import BrevementePage from '../pages/brevemente';
 import CasamentoPage from '../pages/casamento';
 import ContactosPage from '../pages/contactos';
 import EstadiaPage from '../pages/estadia';
+import FornecedoresPage from '../pages/fornecedores';
 import FotosPage from '../pages/fotos';
 import GangMadrinhalPage from '../pages/gang-madrinhal';
 import HistoriaPage from '../pages/historia';
@@ -39,6 +40,10 @@ export const routes = [
     {
         path: '/casamento',
         component: CasamentoPage,
+    },
+    {
+        path: '/fornecedores',
+        component: FornecedoresPage,
     },
     {
         path: '/estadia',

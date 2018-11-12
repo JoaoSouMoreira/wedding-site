@@ -1,3 +1,7 @@
+.header {
+    position: relative;
+}
+
 .banner {
     display: block;
     width: 600px;

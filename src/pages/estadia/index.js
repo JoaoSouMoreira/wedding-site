@@ -1,16 +1,17 @@
 import React from 'react';
 
+import BasePage from '../base';
 import NavigationBar from '../../client/components/navbar';
 import WeddingFooter from '../../client/components/footer';
 import WeddingHeader from '../../client/components/header';
 
 import baseStyles from '../home/home.css';
 
-class EstadiaPage extends React.Component {
+class EstadiaPage extends BasePage {
 
     render() {
         return <div className={baseStyles.main}>
-            <WeddingHeader></WeddingHeader>
+            <WeddingHeader  setLanguage={this.setLanguage.bind(this)}></WeddingHeader>
             <div className={baseStyles.container}>
                 <NavigationBar></NavigationBar>
                 <div className={baseStyles.content}>
