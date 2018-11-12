@@ -40,6 +40,6 @@ html a {
 }
 
 .image {
-    max-width: 900px;
+    width: 95%;
     margin: 0 10px;
 }
