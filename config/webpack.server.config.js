@@ -9,6 +9,7 @@ const baseConfig = require('./webpack.base.config');
 const routes = require('../src/client/routes').routes.map((route) => route.path);
 
 module.exports = env => {
+    console.log(JSON.stringify(process.env));
     return {
         ...baseConfig,
         name: 'server',
