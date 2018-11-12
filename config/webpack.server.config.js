@@ -23,9 +23,11 @@ module.exports = env => {
         plugins: [
             new Dotenv(),
             new webpack.DefinePlugin({
-                NODE_ENV: `'${env.NODE_ENV}'`,
-                PLATFORM: JSON.stringify('server'),
-                GOOGLE_API_KEY: JSON.stringify(process.env.GOOGLE_API_KEY)
+                'process.env': {
+                    'NODE_ENV': `'${env.NODE_ENV}'`,
+                    'GOOGLE_API_KEY': JSON.stringify(process.env.GOOGLE_API_KEY)
+                },
+                PLATFORM: JSON.stringify('server')
             }),
             new ExtractTextPlugin({
                 filename: 'bundle.css',
