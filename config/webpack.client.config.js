@@ -25,6 +25,9 @@ module.exports = () => {
         plugins: [
             new Dotenv(),
             new webpack.DefinePlugin({
+                'process.env': {
+                    'GOOGLE_API_KEY': `'${process.env.GOOGLE_API_KEY}'`
+                },
                 PLATFORM: JSON.stringify('client')
             }),
             new ExtractTextPlugin({
