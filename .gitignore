@@ -6,6 +6,7 @@ public/*
 !public/assets
 !public/fonts
 !public/_redirects
+!public/favicon.ico
 
 node_modules
 .env
