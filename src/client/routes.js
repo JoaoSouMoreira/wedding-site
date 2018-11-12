@@ -6,6 +6,7 @@ import FotosPage from '../pages/fotos';
 import GangMadrinhalPage from '../pages/gang-madrinhal';
 import HistoriaPage from '../pages/historia';
 import HomePage from '../pages/home';
+import NotFoundPage from '../pages/404';
 import PedidoPage from '../pages/pedido';
 import SugestoesPage from '../pages/sugestoes';
 import ViajarPage from '../pages/viajar';
@@ -58,5 +59,9 @@ export const routes = [
     {
         path: '/rsvp',
         component: BrevementePage,
+    },
+    {
+        path: '/404',
+        component: NotFoundPage,
     },
 ]
