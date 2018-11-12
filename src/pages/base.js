@@ -6,7 +6,6 @@ class BasePage extends React.Component {
 
     setLanguage(language) {
         strings.setLanguage(language);
-        console.log(strings.getLanguage());
         this.forceUpdate();
     }
 
