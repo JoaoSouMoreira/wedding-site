@@ -9,7 +9,6 @@ const baseConfig = require('./webpack.base.config');
 const routes = require('../src/client/routes').routes.map((route) => route.path);
 
 module.exports = env => {
-    console.log(JSON.stringify(process.env));
     return {
         ...baseConfig,
         name: 'server',
@@ -25,7 +24,8 @@ module.exports = env => {
             new Dotenv(),
             new webpack.DefinePlugin({
                 'process.env': {
-                    'NODE_ENV': `'${env.NODE_ENV}'`
+                    'NODE_ENV': `'${env.NODE_ENV}'`,
+                    'GOOGLE_API_KEY': `'${process.env.GOOGLE_API_KEY}'`
                 },
                 PLATFORM: JSON.stringify('server')
             }),
