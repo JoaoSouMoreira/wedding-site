@@ -18,7 +18,7 @@ class HistoriaPage extends React.Component {
                     <h3>Isabel</h3>
                     <p>Amiga, gentil, cheia de amor para dar. A “emotiva” da relação. Cientista. Adora o que faz, o que a torna por vezes demasiado viciada no trabalho, mas também adora yoga, fotografia e dança. Adora a sua família e os seus amigos, vê o melhor nas pessoas. Preocupada, ansiosa e por vezes “stressadinha”, anda a aprender a ser ela própria e a aceitar as coisas como elas são.</p>
                     <h3>Joāo</h3>
-                    <p>Meigo, sensato, ponderado. O “racional” da relação. Programador. Trabalhador e aplicado. Por vezes demasiado relaxado, o que pode levar a procrastinação não desejada. Apesar de por vezes parecer um pouco desligado. É amigo do próximo e tem bom querer para toda a gente. Adora música e tecnologia.</p>
+                    <p>Meigo, sensato, ponderado. O “racional” da relação. Programador. Trabalhador e aplicado. Por vezes demasiado relaxado, podendo parecer um pouco desligado, mas é muito amigo dos seus amigos e de qualquer pessoa, tendo bom querer para toda a gente. Se possa parecer tímido em certas circunstâncias, quando ganha à vontade consegue ser super divertido. Com uma cultura bem acima da média (altamente impulsionada pela sua facilidade em navegar na internet), adora música e tecnologia.</p>
                     <h3>Isabel & Joāo</h3>
                     <p>Fazemos bem um ou outro, tornamo-nos melhores quando estamos juntos.</p>
                     <p>Ambos adoramos ir a festivais de música. E ambos adoramos jogos de computador - um fim de semana perfeito por vezes é passado na “ronha” no sofá, juntos, a jogar, ou a ver séries.</p>
