@@ -2,6 +2,8 @@
 .vscode/
 .history/
 
-/public/
+public/*
+!public/assets
+!public/fonts
 node_modules
 .env
