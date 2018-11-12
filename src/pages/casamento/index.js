@@ -9,6 +9,7 @@ import baseStyles from '../home/home.css';
 class CasamentoPage extends React.Component {
 
     render() {
+        console.log(process.env.GOOGLE_API_KEY);
         return <div className={baseStyles.main}>
             <WeddingHeader></WeddingHeader>
             <div className={baseStyles.container}>
