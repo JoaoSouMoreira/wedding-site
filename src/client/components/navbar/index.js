@@ -33,9 +33,12 @@ class NavigationBar extends React.Component {
 
         const navElements = navItems
             .filter((navItem) => navItem.display)
-            .map((navItem) => (<li key={navItem.title} className={styles.item}>
-                    <NavLink to={navItem.href}>{ navItem.title }</NavLink>
-                </li>));
+            .map((navItem) => {
+                const classes = navItem.href === this.props.path ? [styles.item, styles.active] : [styles.item];
+                return <li key={navItem.title} className={classes.join(' ')}>
+                        <NavLink to={navItem.href}>{ navItem.title }</NavLink>
+                </li>;
+            });
 
         return <div className={styles.navbar}>
             <ul className={styles.items}>{ navElements }</ul>

@@ -13,7 +13,7 @@ class FornecedoresPage extends BasePage {
         return <div className={baseStyles.main}>
             <WeddingHeader setLanguage={this.props.setLanguage}></WeddingHeader>
             <div className={baseStyles.container}>
-                <NavigationBar></NavigationBar>
+                <NavigationBar path={this.props.location.pathname}></NavigationBar>
                 <div className={baseStyles.content}>
                     <h1>Disponível Brevemente!</h1>
                 </div>

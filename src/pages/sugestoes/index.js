@@ -13,7 +13,7 @@ class SugestoesPage extends BasePage {
         return <div className={baseStyles.main}>
             <WeddingHeader  setLanguage={this.setLanguage.bind(this)}></WeddingHeader>
             <div className={baseStyles.container}>
-                <NavigationBar></NavigationBar>
+                <NavigationBar path={this.props.location.pathname}></NavigationBar>
                 <div className={baseStyles.content}>
                     <h2>Sugestões dos Noivos</h2>
                     <p>Estamos a planear fazer um pequeno programa para a Quarta-Feira e Quinta-Feira (8 e 9 de Maio) antes do casamento para fazermos algo por São Miguel com os convidados se queiram juntar a nós. O que estamos a pensar neste momento seria um dos dias por Ponta Delgada, que poderia incluir um passeio de barco (Whale Watching, por exemplo), e o outro dia nas Furnas (cozido das Furnas, bolos lêvedos, Poça da Dona Beija). Os custos seriam assegurados individualmente, como poderão compreender.</p>

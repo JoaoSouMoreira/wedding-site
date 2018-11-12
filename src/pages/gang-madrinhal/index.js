@@ -55,7 +55,7 @@ class GangMadrinhalPage extends BasePage {
         return <div className={baseStyles.main}>
             <WeddingHeader  setLanguage={this.setLanguage.bind(this)}></WeddingHeader>
             <div className={baseStyles.container}>
-                <NavigationBar></NavigationBar>
+                <NavigationBar path={this.props.location.pathname}></NavigationBar>
                 <div className={styles.content}>
                     <div className={styles.photos}>
                         {this.getPhotoElements()}

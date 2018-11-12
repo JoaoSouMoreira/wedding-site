@@ -14,7 +14,7 @@ class BrevementePage extends BasePage {
         return <div className={baseStyles.main}>
             <WeddingHeader setLanguage={this.setLanguage.bind(this)}></WeddingHeader>
             <div className={baseStyles.container}>
-                <NavigationBar></NavigationBar>
+                <NavigationBar path={this.props.location.pathname}></NavigationBar>
                 <div className={baseStyles.content}>
                     <h1>{strings.brevemente}</h1>
                 </div>

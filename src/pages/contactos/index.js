@@ -14,7 +14,7 @@ class ContactosPage extends BasePage {
         return <div className={baseStyles.main}>
             <WeddingHeader setLanguage={this.setLanguage.bind(this)}></WeddingHeader>
             <div className={baseStyles.container}>
-                <NavigationBar></NavigationBar>
+                <NavigationBar path={this.props.location.pathname}></NavigationBar>
                 <div className={baseStyles.content}>
                     <h1>{strings.contactos1}</h1>
                     <p>{strings.contactos2} <a href="mailto:isabeljoao@omelhorcasamentode2019.com">isabeljoao@omelhorcasamentode2019.com</a> {strings.contactos3}</p>

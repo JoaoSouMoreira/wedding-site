@@ -15,7 +15,7 @@ class ViajarPage extends BasePage {
         return <div className={baseStyles.main}>
             <WeddingHeader  setLanguage={this.setLanguage.bind(this)}></WeddingHeader>
             <div className={baseStyles.container}>
-                <NavigationBar></NavigationBar>
+                <NavigationBar path={this.props.location.pathname}></NavigationBar>
                 <div className={baseStyles.content}>
                     <h3>Porto/{strings.viajar1} –> Ponta Delgada</h3>
                     <ul>

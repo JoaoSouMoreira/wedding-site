@@ -13,9 +13,9 @@ class HistoriaPage extends BasePage {
         return <div className={baseStyles.main}>
             <WeddingHeader  setLanguage={this.setLanguage.bind(this)}></WeddingHeader>
             <div className={baseStyles.container}>
-                <NavigationBar></NavigationBar>
+                <NavigationBar path={this.props.location.pathname}></NavigationBar>
                 <div className={baseStyles.content}>
-                    <h2>A nossa história</h2>
+                    <h2>A Nossa História</h2>
                     <h3>Isabel</h3>
                     <p>Amiga, gentil, cheia de amor para dar. A “emotiva” da relação. Cientista. Adora o que faz, o que a torna por vezes demasiado viciada no trabalho, mas também adora yoga, fotografia e dança. Adora a sua família e os seus amigos, vê o melhor nas pessoas. Preocupada, ansiosa e por vezes “stressadinha”, anda a aprender a ser ela própria e a aceitar as coisas como elas são.</p>
                     <h3>Joāo</h3>

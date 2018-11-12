@@ -13,7 +13,7 @@ class EstadiaPage extends BasePage {
         return <div className={baseStyles.main}>
             <WeddingHeader  setLanguage={this.setLanguage.bind(this)}></WeddingHeader>
             <div className={baseStyles.container}>
-                <NavigationBar></NavigationBar>
+                <NavigationBar path={this.props.location.pathname}></NavigationBar>
                 <div className={baseStyles.content}>
                     <h1>Estadia</h1>
                     <p>Neste momento há muita oferta de estadia em São Miguel. Se vêm de férias por alguns dias recomendamos um airbnb ou hostel no centro de Ponta Delgada, mas se quiserem ficar connosco no local do casamento, por favor vejam a informação abaixo relativa ao Convento de São Francisco. Deixamos outras sugestões abaixo, mas apelamos ao vosso sentido crítico pois como podem imaginar nós não costumamos alugar espaço para ficarmos.</p>

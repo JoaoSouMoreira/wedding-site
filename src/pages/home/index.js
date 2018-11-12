@@ -40,7 +40,7 @@ class HomePage extends BasePage {
         return <div className={styles.main}>
             <WeddingHeader setLanguage={this.setLanguage.bind(this)}></WeddingHeader>
             <div className={styles.container}>
-            <NavigationBar></NavigationBar>
+            <NavigationBar path={this.props.location.pathname}></NavigationBar>
                 <div className={styles.content}>
                     <img className={styles.image} src={`/assets/${this.state.photoNumber}.jpg`} />
                     <p>{strings.homeText}</p>
