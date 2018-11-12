@@ -24,8 +24,7 @@ module.exports = env => {
             new Dotenv(),
             new webpack.DefinePlugin({
                 'process.env': {
-                    'NODE_ENV': `'${env.NODE_ENV}'`,
-                    'GOOGLE_API_KEY': JSON.stringify(process.env.GOOGLE_API_KEY)
+                    'NODE_ENV': `'${env.NODE_ENV}'`
                 },
                 PLATFORM: JSON.stringify('server')
             }),

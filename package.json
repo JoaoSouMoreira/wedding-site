@@ -16,7 +16,7 @@
     "clean": "find ./public -maxdepth 1 -type f -delete",
     "client:build": "./node_modules/.bin/webpack --config ./config/webpack.client.config.js",
     "client:dev": "./node_modules/.bin/webpack-dev-server --config ./config/webpack.client.config.js",
-    "server:build": "npm run client:build && ./node_modules/.bin/babel-node ./scripts/create-env.js && ./node_modules/.bin/babel-node --presets react,env,stage-2 --plugins extract-text,css-modules-transform ./node_modules/webpack/bin/webpack --config ./config/webpack.server.config.js --env.NODE_ENV=production",
+    "server:build": "npm run client:build && ./node_modules/.bin/babel-node --presets react,env,stage-2 --plugins extract-text,css-modules-transform ./node_modules/webpack/bin/webpack --config ./config/webpack.server.config.js --env.NODE_ENV=production",
     "server:prod": "npm run server:build && node ./public/server.js"
   },
   "devDependencies": {
