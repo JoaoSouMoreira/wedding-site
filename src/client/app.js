@@ -3,7 +3,7 @@ import { hot } from 'react-hot-loader';
 import { Route, Switch } from 'react-router-dom';
 
 import { routes } from './routes';
-import NotFoundPage from '../pages/notfound';
+import NotFoundPage from '../pages/404';
 
 class App extends React.Component {
 
