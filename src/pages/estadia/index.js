@@ -5,6 +5,7 @@ import NavigationBar from '../../client/components/navbar';
 import WeddingFooter from '../../client/components/footer';
 import WeddingHeader from '../../client/components/header';
 
+import strings from '../../client/localizations';
 import baseStyles from '../home/home.css';
 
 class EstadiaPage extends BasePage {
@@ -15,17 +16,17 @@ class EstadiaPage extends BasePage {
             <div className={baseStyles.container}>
                 <NavigationBar path={this.props.location.pathname}></NavigationBar>
                 <div className={baseStyles.content}>
-                    <h1>Estadia</h1>
-                    <p>Neste momento há muita oferta de estadia em São Miguel. Se vêm de férias por alguns dias recomendamos um airbnb ou hostel no centro de Ponta Delgada, mas se quiserem ficar connosco no local do casamento, por favor vejam a informação abaixo relativa ao Convento de São Francisco. Deixamos outras sugestões abaixo, mas apelamos ao vosso sentido crítico pois como podem imaginar nós não costumamos alugar espaço para ficarmos.</p>
+                    <h1>{strings.estadia1}</h1>
+                    <p>{strings.estadia2}</p>
                     <br/>
-                    <p><u>Convento de São Francisco</u>, Vila Franca do Campo (local do casamento)</p>
-                    <p>Enviar email para <a href="mailto:manuela.m.guerreiro@sapo.pt">manuela.m.guerreiro@sapo.pt</a> para marcações com 10% de desconto relativamente ao preço no <a href="https://www.booking.com/hotel/pt/convento-de-sao-francisco-vfc.en-gb.html" target="_blank">Booking</a></p>
+                    <p><u>Convento de São Francisco</u>, Vila Franca do Campo ({strings.estadia3})</p>
+                    <p>{strings.estadia4} <a href="mailto:manuela.m.guerreiro@sapo.pt">manuela.m.guerreiro@sapo.pt</a> {strings.estadia5} <a href="https://www.booking.com/hotel/pt/convento-de-sao-francisco-vfc.en-gb.html" target="_blank">Booking</a></p>
                     <br/>
                     <p><u>Out Of The Blue Hostel</u>, Ponta Delgada</p>
-                    <p>Nunca ficámos neste hotel, mas já lá jantámos 2x (noite de sushi) e visitámos o espaço. O staff é super simpático e o jardim é fantástico. Recomendamos darem uma vista de olhos. <a href="https://www.booking.com/hotel/pt/out-of-the-blue.en-gb.html" target="_blank">Booking</a></p>
+                    <p>{strings.estadia6} <a href="https://www.booking.com/hotel/pt/out-of-the-blue.en-gb.html" target="_blank">Booking</a></p>
                     <br/>
-                    <p>Qualquer dúvida em que possamos ajudar ou dar uma opinião falem connosco.</p>
-                    <p>Independentemente de onde fiquem, recomendamos alugar carro (a nosso ver é mesmo obrigatório para poderem ver a ilha). Algumas sugestões (baseadas em críticas no Google), mas novamente apelando ao vosso sentido crítico porque não costumamos alugar carro na ilha:</p>
+                    <p>{strings.estadia7}</p>
+                    <p>{strings.estadia8}</p>
                     <ul>
                         <li>
                             <a href="https://wayzor.pt/pt" target="_blank">Wayzor</a>
