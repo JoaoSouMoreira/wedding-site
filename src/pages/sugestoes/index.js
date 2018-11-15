@@ -38,13 +38,14 @@ class SugestoesPage extends BasePage {
                             </li>
                             <li>
                                 Ferraria - <a href="https://play.google.com/store/apps/details?id=kruk.azores.hotsprings.ferraria&hl=en" target="_blank">Android</a> {strings.ou} <a href="https://itunes.apple.com/pt/app/ferraria-hot-springs/id1243807675?l=en&mt=8" target="_blank">iOS</a>
-                                <ul><li>{strings.sugestoes12}</li></ul>
+                                <ul><li>{strings.sugestoes11}</li></ul>
                             </li>
                         </ul>
                     </p>
                     <p>
-                        {strings.sugestoes13}
+                        {strings.sugestoes12}
                         <ul>
+                            <li>{strings.sugestoes13}</li>
                             <li>{strings.sugestoes14}</li>
                             <li>{strings.sugestoes15}</li>
                             <li>{strings.sugestoes16}</li>
