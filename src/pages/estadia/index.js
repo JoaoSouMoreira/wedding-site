@@ -26,6 +26,8 @@ class EstadiaPage extends BasePage {
                     <p>{strings.estadia6} <a href="https://www.booking.com/hotel/pt/out-of-the-blue.en-gb.html" target="_blank">Booking</a></p>
                     <br/>
                     <p>{strings.estadia7}</p>
+                    <br/>
+                    <h2>Alugar carro</h2>
                     <p>{strings.estadia8}</p>
                     <ul>
                         <li>

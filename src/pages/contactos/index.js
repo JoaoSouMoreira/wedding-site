@@ -17,7 +17,7 @@ class ContactosPage extends BasePage {
                 <NavigationBar path={this.props.location.pathname}></NavigationBar>
                 <div className={baseStyles.content}>
                     <h1>{strings.contactos1}</h1>
-                    <p>{strings.contactos2} <a href="mailto:isabeljoao@omelhorcasamentode2019.com">isabeljoao@omelhorcasamentode2019.com</a> {strings.contactos3}</p>
+                    <p>{strings.contactos2} <a href="mailto:omelhorcasamentode2019@gmail.com">omelhorcasamentode2019@gmail.com</a> {strings.contactos3}</p>
                 </div>
             </div>
             <WeddingFooter></WeddingFooter>
