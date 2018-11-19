@@ -66,7 +66,7 @@ export default new LocalizedStrings({
         historia15: "Em 2014 o João teve uma oferta para vir para Exeter (Reino Unido) trabalhar, e mais uma vez estivemos 1 ano e meio separados – o João em Exeter e a Isabel em Braga. Mais uma vez, víamo-nos fisicamente de 3 em 3 meses.",
         historia16: "Em 2015 a Isabel terminou o mestrado em Ciências da Saúde (Neurociências) e juntou-se ao João em Exeter para fazer o doutoramento (Estudos Médicos – estudos de genética na doença de Alzheimer), onde vivemos desde então.",
         historia17: "Em 2017 o Deago (lê-se Diego, mas quem originalmente lhe deu o nome no gatil claramente falhou) juntou-se à nossa pequena família (agora somos 3!).",
-        historia18: "Em 2017 o João pediu a Isabel em casamento e a 11 de Maio de 2019.",
+        historia18: "Em 2017 o João pediu a Isabel em casamento e a 11 de Maio de 2019 vamos dar o nó.",
         historia19: "Ainda não sabemos exactamente para onde vamos a seguir. Temos planos e ambições, mas muito poderá mudar. Tem sido uma aventura feliz, em que temos crescido e amadurecido juntos.",
         historia20: "Ao longo dos anos tivemos os nossos problemas, claro (estranho seria se não tivessemos!), mas somos uns apaixonados um pelo outro, e vemo-nos a continuar a construir a nossa história, a construir família, e a envelhecer juntos.",
         historia21: "13 anos depois de estarmos juntos, vamos finalmente casar!",
