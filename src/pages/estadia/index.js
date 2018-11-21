@@ -12,7 +12,7 @@ class EstadiaPage extends BasePage {
 
     render() {
         return <div className={baseStyles.main}>
-            <WeddingHeader  setLanguage={this.setLanguage.bind(this)}></WeddingHeader>
+            <WeddingHeader setLanguage={this.setLanguage.bind(this)}></WeddingHeader>
             <div className={baseStyles.container}>
                 <NavigationBar path={this.props.location.pathname}></NavigationBar>
                 <div className={baseStyles.content}>
