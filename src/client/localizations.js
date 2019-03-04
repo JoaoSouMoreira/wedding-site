@@ -158,6 +158,12 @@ export default new LocalizedStrings({
         sugestoes79: "(o melhor bife)",
         sugestoes80: "Restaurante da Associação Agrícola",
         sugestoes81: "(sinceramente nunca lá fomos, mas tem muita reputação)",
+        rsvp1: "Nome",
+        rsvp2: "Sim",
+        rsvp3: "Nāo",
+        rsvp4: "Observaçōes",
+        rsvp5: "Submeter",
+        rsvp6: "Obrigado pela resposta!",
     },
     en: {
         ou: "or",
@@ -317,5 +323,11 @@ export default new LocalizedStrings({
         sugestoes79: "(the best steak)",
         sugestoes80: "Farmers Association Restaurant (Restaurante da Associação Agrícola)",
         sugestoes81: "(honestly we have never tried it, but it has a very good reputation)",
+        rsvp1: "Name",
+        rsvp2: "Yes",
+        rsvp3: "No",
+        rsvp4: "Observations",
+        rsvp5: "Submit",
+        rsvp6: "Thank you for your reply!",
     }
 });

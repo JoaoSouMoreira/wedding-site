@@ -19,7 +19,8 @@ module.exports = () => {
         },
         devServer: {
             contentBase: publicPath,
-            publicPath: '/'
+            publicPath: '/',
+            historyApiFallback: true,
         },
         devtool: 'source-map',
         plugins: [

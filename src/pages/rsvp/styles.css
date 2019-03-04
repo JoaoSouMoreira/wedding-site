@@ -1,0 +1,28 @@
+.formSection {
+  margin-top: 20px;
+}
+
+.label {
+  font-size: 20px;
+}
+
+.radio {
+  margin-left: 20px;
+}
+
+.input {
+  margin-left: 10px;
+  width: 300px;
+}
+
+.textarea {
+  width: 400px;
+}
+
+.button {
+  padding: 5px;
+}
+
+.loading {
+  width: 25px;
+}
