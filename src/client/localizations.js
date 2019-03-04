@@ -18,6 +18,7 @@ export default new LocalizedStrings({
         menu11: "Fotos",
         menu12: "Contactos",
         menu13: "RSVP",
+        menu14: "Prendas",
         homeText: "Bem-vindo(s) à página oficial do nosso casamento.",
         brevemente: "Disponível Brevemente!",
         notfound: "Página não encontrada",
@@ -164,6 +165,7 @@ export default new LocalizedStrings({
         rsvp4: "Observaçōes",
         rsvp5: "Submeter",
         rsvp6: "Obrigado pela resposta!",
+        prendas1: "Prendas aqui",
     },
     en: {
         ou: "or",
@@ -182,6 +184,7 @@ export default new LocalizedStrings({
         menu11: "Photos",
         menu12: "Contacts",
         menu13: "RSVP",
+        menu14: "Gifts",
         homeText: "Welcome to our wedding's official web site.",
         brevemente: "Page available soon.",
         notfound: "Page not found",
@@ -329,5 +332,6 @@ export default new LocalizedStrings({
         rsvp4: "Observations",
         rsvp5: "Submit",
         rsvp6: "Thank you for your reply!",
+        prendas1: "Gifts here",
     }
 });

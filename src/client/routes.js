@@ -9,6 +9,7 @@ import HistoriaPage from '../pages/historia';
 import HomePage from '../pages/home';
 import NotFoundPage from '../pages/404';
 import PedidoPage from '../pages/pedido';
+import PrendasPage from '../pages/prendas';
 import RSVPPage from '../pages/rsvp';
 import SugestoesPage from '../pages/sugestoes';
 import ViajarPage from '../pages/viajar';
@@ -61,6 +62,10 @@ export const routes = [
     {
         path: '/contactos',
         component: ContactosPage,
+    },
+    {
+        path: '/prendas',
+        component: PrendasPage,
     },
     {
         path: '/rsvp',
