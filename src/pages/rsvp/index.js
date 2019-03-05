@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-
+import { withRouter } from 'react-router-dom';
 import BasePage from '../base';
 import NavigationBar from '../../client/components/navbar';
 import WeddingFooter from '../../client/components/footer';
@@ -23,6 +23,8 @@ class RSVPPage extends BasePage {
       },
       isSubmitted: false,
       isLoading: false,
+      isValid: false,
+      codeInput: '',
     }
   }
 
@@ -33,6 +35,21 @@ class RSVPPage extends BasePage {
         [key]: value,
       }
     }))
+  }
+
+  onInputChange = (value) => {
+    this.setState({
+      codeInput: value,
+    });
+  }
+
+  validate = () => {
+    if (btoa(this.state.codeInput) === 'ZGVzZGUyMDA2') {
+      this.setState({
+        codeInput: '',
+        isValid: true,
+      })
+    }
   }
 
   submit = (event) => {
@@ -61,6 +78,23 @@ class RSVPPage extends BasePage {
 
   render() {
     const { formData, isLoading } = this.state;
+
+    const validation = (
+      <div>
+        <label className={styles.label} htmlFor="code">{strings.rsvp8}</label>
+        <input
+          className={styles.input}
+          type="password"
+          name="code"
+          id="code"
+          onChange={event => this.onInputChange(event.target.value)}
+          required
+        />
+        <div className={styles.formSection}>
+          <button className={styles.button} onClick={this.validate}>{strings.rsvp7}</button>
+        </div>
+      </div>
+    );
 
     const form = (
       <form id="rsvp" onSubmit={this.submit}>
@@ -131,7 +165,7 @@ class RSVPPage extends BasePage {
         <div className={baseStyles.container}>
             <NavigationBar path={this.props.location.pathname} />
             <div className={baseStyles.content}>
-                {this.state.isSubmitted ? success : form}
+              {this.state.isValid ? (this.state.isSubmitted ? success : form) : validation}
             </div>
         </div>
         <WeddingFooter />
@@ -139,4 +173,4 @@ class RSVPPage extends BasePage {
   }
 }
 
-export default RSVPPage;
+export default withRouter(RSVPPage);

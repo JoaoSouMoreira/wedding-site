@@ -165,6 +165,8 @@ export default new LocalizedStrings({
         rsvp4: "Observaçōes",
         rsvp5: "Submeter",
         rsvp6: "Obrigado pela resposta!",
+        rsvp7: "Entrar",
+        rsvp8: "Código",
         prendas1: "Prendas aqui",
     },
     en: {
@@ -332,6 +334,8 @@ export default new LocalizedStrings({
         rsvp4: "Observations",
         rsvp5: "Submit",
         rsvp6: "Thank you for your reply!",
+        rsvp7: "Enter",
+        rsvp8: "Code",
         prendas1: "Gifts here",
     }
 });
