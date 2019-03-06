@@ -69,7 +69,7 @@ class FornecedoresPage extends BasePage {
                     <ul className={styles.list}>
                         <li><a href="https://www.facebook.com/beatrizfeijomakeup" target="_blank">Facebook</a></li>
                     </ul>
-                    <p className={styles.paragraph}>{strings.fornecedores11}: Avó</p>
+                    <p className={styles.paragraph}>{strings.fornecedores11}: Avó da noiva</p>
                     <h3>{strings.fornecedores13}</h3>
                     <p className={styles.paragraph}>Fato: Lojas Prassa</p>
                     <ul className={styles.list}>

@@ -17,18 +17,25 @@ class ViajarPage extends BasePage {
             <div className={baseStyles.container}>
                 <NavigationBar path={this.props.location.pathname}></NavigationBar>
                 <div className={baseStyles.content}>
-                    <h3>Porto/{strings.viajar1} –> Ponta Delgada</h3>
-                    <ul>
-                        <li className={styles.item}><a href="https://www.azoresairlines.pt" target="_blank">Azores Airlines</a></li>
-                        <li className={styles.item}><a href="https://www.flytap.com" target="_blank">TAP Air Portugal</a></li>
-                        <li className={styles.item}><a href="https://www.ryanair.com" target="_blank">Ryanair</a></li>
-                    </ul>
-                    <h3>London –> Ponta Delgada</h3>
-                    <ul>
-                        <li className={styles.item}><a href="https://www.azoresairlines.pt" target="_blank">Azores Airlines</a> (Com paragem no Porto/Lisboa)</li>
-                        <li className={styles.item}><a href="https://www.flytap.com" target="_blank">TAP Air Portugal</a> (Com paragem no Porto/Lisboa)</li>
-                        <li className={styles.item}><a href="https://www.ryanair.com" target="_blank">Ryanair</a> (Voo directo; apenas aos Sábados)</li>
-                    </ul>
+                    <div className={styles.content}>
+                        <div className={styles.contentSection}>
+                            <h3>Porto/{strings.viajar1} –> Ponta Delgada</h3>
+                            <ul>
+                                <li className={styles.item}><a href="https://www.azoresairlines.pt" target="_blank">Azores Airlines</a></li>
+                                <li className={styles.item}><a href="https://www.flytap.com" target="_blank">TAP Air Portugal</a></li>
+                                <li className={styles.item}><a href="https://www.ryanair.com" target="_blank">Ryanair</a></li>
+                            </ul>
+                            <h3>London –> Ponta Delgada</h3>
+                            <ul>
+                                <li className={styles.item}><a href="https://www.azoresairlines.pt" target="_blank">Azores Airlines</a> (Com paragem no Porto/Lisboa)</li>
+                                <li className={styles.item}><a href="https://www.flytap.com" target="_blank">TAP Air Portugal</a> (Com paragem no Porto/Lisboa)</li>
+                                <li className={styles.item}><a href="https://www.ryanair.com" target="_blank">Ryanair</a> (Voo directo; apenas aos Sábados)</li>
+                            </ul>
+                        </div>
+                        <div className={styles.imageSection}>
+                            <img className={styles.image} src="/assets/viajar.jpg" />
+                        </div>
+                    </div>
                 </div>
             </div>
             <WeddingFooter></WeddingFooter>

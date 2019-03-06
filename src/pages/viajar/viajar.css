@@ -2,3 +2,23 @@
     list-style: none;
     margin-bottom: 10px;
 }
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.contentSection {
+    flex-basis: 55%;
+}
+
+.imageSection {
+    flex-basis: 45%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+

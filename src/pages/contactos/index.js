@@ -7,6 +7,7 @@ import WeddingHeader from '../../client/components/header';
 
 import strings from '../../client/localizations';
 import baseStyles from '../home/home.css';
+import styles from './styles.css';
 
 class ContactosPage extends BasePage {
 
@@ -18,6 +19,7 @@ class ContactosPage extends BasePage {
                 <div className={baseStyles.content}>
                     <h1>{strings.contactos1}</h1>
                     <p>{strings.contactos2} <a href="mailto:omelhorcasamentode2019@gmail.com">omelhorcasamentode2019@gmail.com</a> {strings.contactos3}</p>
+                    <img className={styles.banner} src="/assets/contactos.jpg" />
                 </div>
             </div>
             <WeddingFooter></WeddingFooter>

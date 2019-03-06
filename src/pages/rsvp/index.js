@@ -28,6 +28,14 @@ class RSVPPage extends BasePage {
     }
   }
 
+  componentDidMount() {
+    const { location } = this.props;
+    const input = location.search.split('=');
+    if (input && input[1] && input[1] === 'ZGVzZGUyMDA2') {
+      this.setState({ isValid: true });
+    }
+  }
+
   onChange = (key, value) => {
     this.setState(prevState => ({
       formData: {

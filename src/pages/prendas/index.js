@@ -15,8 +15,12 @@ class PrendasPage extends BasePage {
             <WeddingHeader setLanguage={this.setLanguage.bind(this)} />
             <div className={baseStyles.container}>
                 <NavigationBar path={this.props.location.pathname} />
-                <div className={baseStyles  .content}>
+                <div className={baseStyles.content}>
                     <p>{strings.prendas1}</p>
+                    <p>{strings.prendas2}</p>
+                    <p>{strings.prendas3}</p>
+                    <p>{strings.prendas4}</p>
+                    <p>{strings.prendas5}</p>
                 </div>
             </div>
             <WeddingFooter />

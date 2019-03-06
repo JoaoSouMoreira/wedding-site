@@ -7,6 +7,7 @@ import WeddingHeader from '../../client/components/header';
 
 import strings from '../../client/localizations';
 import baseStyles from '../home/home.css';
+import styles from './styles.css';
 
 class PadrinhoPage extends BasePage {
 
@@ -16,9 +17,9 @@ class PadrinhoPage extends BasePage {
             <div className={baseStyles.container}>
                 <NavigationBar path={this.props.location.pathname}></NavigationBar>
                 <div className={baseStyles.content}>
-                    <img className={styles.banner} src="/assets/pedido.jpg" />
-                    <h2>{strings.pedido1}</h2>
-                    <p>{strings.pedido4}</p>
+                    <img className={styles.banner} src="/assets/joaoemarco.jpg" />
+                    <h2>{strings.padrinho1}</h2>
+                    <p>{strings.padrinho2}</p>
                 </div>
             </div>
             <WeddingFooter></WeddingFooter>

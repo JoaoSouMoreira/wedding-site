@@ -8,6 +8,7 @@ import GangMadrinhalPage from '../pages/gang-madrinhal';
 import HistoriaPage from '../pages/historia';
 import HomePage from '../pages/home';
 import NotFoundPage from '../pages/404';
+import PadrinhoPage from '../pages/padrinho';
 import PedidoPage from '../pages/pedido';
 import PrendasPage from '../pages/prendas';
 import RSVPPage from '../pages/rsvp';
@@ -37,7 +38,7 @@ export const routes = [
     },
     {
         path: '/padrinho',
-        component: BrevementePage,
+        component: PadrinhoPage,
     },
     {
         path: '/casamento',

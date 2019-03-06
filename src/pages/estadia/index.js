@@ -7,6 +7,7 @@ import WeddingHeader from '../../client/components/header';
 
 import strings from '../../client/localizations';
 import baseStyles from '../home/home.css';
+import styles from './styles.css';
 
 class EstadiaPage extends BasePage {
 
@@ -16,6 +17,7 @@ class EstadiaPage extends BasePage {
             <div className={baseStyles.container}>
                 <NavigationBar path={this.props.location.pathname}></NavigationBar>
                 <div className={baseStyles.content}>
+                    <img className={styles.banner} src="/assets/estadia.jpg" />
                     <h1>{strings.estadia1}</h1>
                     <p>{strings.estadia2}</p>
                     <br/>

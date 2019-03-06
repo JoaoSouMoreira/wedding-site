@@ -7,6 +7,7 @@ import WeddingHeader from '../../client/components/header';
 
 import strings from '../../client/localizations';
 import baseStyles from '../home/home.css';
+import styles from './styles.css';
 
 class SugestoesPage extends BasePage {
 
@@ -16,6 +17,7 @@ class SugestoesPage extends BasePage {
             <div className={baseStyles.container}>
                 <NavigationBar path={this.props.location.pathname}></NavigationBar>
                 <div className={baseStyles.content}>
+                    <img className={styles.banner} src="/assets/sugestoes.jpg" />
                     <h2>{strings.sugestoes1}</h2>
                     <p>{strings.sugestoes2}</p>
                     <p>{strings.sugestoes3}</p>
