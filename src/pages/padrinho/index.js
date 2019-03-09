@@ -17,9 +17,12 @@ class PadrinhoPage extends BasePage {
             <div className={baseStyles.container}>
                 <NavigationBar path={this.props.location.pathname}></NavigationBar>
                 <div className={baseStyles.content}>
-                    <img className={styles.banner} src="/assets/joaoemarco.jpg" />
+                    <img className={styles.banner} src="/assets/padrinho.jpg" />
                     <h2>{strings.padrinho1}</h2>
                     <p>{strings.padrinho2}</p>
+                    <p>{strings.padrinho3}</p>
+                    <p>{strings.padrinho4}</p>
+                    <p>{strings.padrinho5}</p>
                 </div>
             </div>
             <WeddingFooter></WeddingFooter>

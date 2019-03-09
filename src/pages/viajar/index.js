@@ -27,9 +27,9 @@ class ViajarPage extends BasePage {
                             </ul>
                             <h3>London –> Ponta Delgada</h3>
                             <ul>
-                                <li className={styles.item}><a href="https://www.azoresairlines.pt" target="_blank">Azores Airlines</a> (Com paragem no Porto/Lisboa)</li>
-                                <li className={styles.item}><a href="https://www.flytap.com" target="_blank">TAP Air Portugal</a> (Com paragem no Porto/Lisboa)</li>
-                                <li className={styles.item}><a href="https://www.ryanair.com" target="_blank">Ryanair</a> (Voo directo; apenas aos Sábados)</li>
+                                <li className={styles.item}><a href="https://www.azoresairlines.pt" target="_blank">Azores Airlines</a> {strings.viajar2}</li>
+                                <li className={styles.item}><a href="https://www.flytap.com" target="_blank">TAP Air Portugal</a> {strings.viajar2}</li>
+                                <li className={styles.item}><a href="https://www.ryanair.com" target="_blank">Ryanair</a> {strings.viajar3}</li>
                             </ul>
                         </div>
                         <div className={styles.imageSection}>

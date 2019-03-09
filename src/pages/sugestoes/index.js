@@ -97,7 +97,6 @@ class SugestoesPage extends BasePage {
                             <li>{strings.sugestoes46} <a href="https://www.tripadvisor.pt/Restaurant_Review-g616221-d4025720-Reviews-Tukatula_Bar-Ribeira_Grande_Sao_Miguel_Azores.html" target="_blank">Bar Tuká Tulá</a></li>
                             <li>{strings.sugestoes47}</li>
                             <li>{strings.sugestoes48}</li>
-                            <li>{strings.sugestoes49}</li>
                             <li><a href="https://www.tripadvisor.co.uk/Restaurant_Review-g616221-d1809565-Reviews-Alabote-Ribeira_Grande_Sao_Miguel_Azores.html" target="_blank">{strings.sugestoes50} Alabote</a></li>
                             <li>{strings.sugestoes51}</li>
                             <li>{strings.sugestoes52}</li>
@@ -112,7 +111,7 @@ class SugestoesPage extends BasePage {
                             <li>{strings.sugestoes56}</li>
                             <li>{strings.sugestoes57}</li>
                             <li>Bolos Levedos - Gloria Moniz</li>
-                            <li><a href="http://www.pocadadonabeija.com/" target="_blank">{strings.sugestoes58}</a> – {strings.sugestoes59}</li>
+                            <li><a href="https://www.tripadvisor.co.uk/Attraction_Review-g1190881-d2331746-Reviews-Poca_Da_Dona_Beija-Furnas_Povoacao_Sao_Miguel_Azores.html" target="_blank">{strings.sugestoes58}</a> – {strings.sugestoes59}</li>
                             <li>{strings.sugestoes60}</li>
                             <li>{strings.sugestoes61}</li>
                             <li>{strings.sugestoes62}</li>
@@ -133,6 +132,7 @@ class SugestoesPage extends BasePage {
                     <p>
                         <b>{strings.sugestoes71}</b>
                         <ul>
+                            <li>{strings.sugestoes49}</li>
                             <li>{strings.sugestoes72}</li>
                             <li><a href="https://www.tripadvisor.co.uk/Restaurant_Review-g189135-d1239140-Reviews-Cais_20-Ponta_Delgada_Sao_Miguel_Azores.html" target="_blank">Cais 20</a> {strings.sugestoes73}</li>
                             <li><a href="https://www.tripadvisor.co.uk/Attraction_Review-g189135-d3610253-Reviews-Arco_8-Ponta_Delgada_Sao_Miguel_Azores.html" target="_blank">Arco 8</a> {strings.sugestoes74}</li>
