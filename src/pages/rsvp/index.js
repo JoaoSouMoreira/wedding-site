@@ -60,30 +60,6 @@ class RSVPPage extends BasePage {
     }
   }
 
-  submit = (event) => {
-    event.preventDefault();
-    this.setState({ isLoading: true });
-    const { formData } = this.state;
-    const url = 'https://script.google.com/macros/s/AKfycby38WsNbJfwRoXlTth331cey5sX3AHFrxsekC_-cWYiUXwp0pDY/exec';
-    const data = new FormData();
-    for (const property in formData) {
-      data.append(property, formData[property]);
-    }
-    const headers = {
-      'Content-Type': 'text/plain;charset=utf-8',
-    }
-
-    axios({
-      method: 'post',
-      url,
-      data,
-      headers,
-      maxRedirects: 0,
-    }).then(() => {
-      this.setState({ isSubmitted: true, isLoading: false });
-    });
-  }
-
   render() {
     const { formData, isLoading } = this.state;
 
@@ -105,8 +81,7 @@ class RSVPPage extends BasePage {
     );
 
     const form = (
-      <form id="rsvp" onSubmit={this.submit}>
-        <div className={styles.formSection}>
+      <form id="rsvp">
           <label className={styles.label} htmlFor="name">{strings.rsvp1}</label>
           <input
             className={styles.input}

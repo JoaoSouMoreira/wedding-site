@@ -25,7 +25,7 @@ class NavigationBar extends React.Component {
             { title: strings.menu11, display: true, href: '/fotos' },
             { title: strings.menu12, display: true, href: '/contactos' },
             { title: strings.menu14, display: true, href: '/prendas' },
-            { title: strings.menu13, display: true, href: '/rsvp' },
+            // { title: strings.menu13, display: true, href: '/rsvp' },
         ];
     }
 
