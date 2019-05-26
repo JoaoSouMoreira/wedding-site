@@ -82,6 +82,7 @@ class RSVPPage extends BasePage {
 
     const form = (
       <form id="rsvp">
+        <div className={styles.formSection}>
           <label className={styles.label} htmlFor="name">{strings.rsvp1}</label>
           <input
             className={styles.input}
