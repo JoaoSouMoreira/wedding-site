@@ -14,27 +14,10 @@ class HomePage extends BasePage {
     constructor(props) {
         super(props);
 
-        this.state = { 
-            // weddingDate: moment("2019-05-11T15:00:00.000"), 
-            // counter: '',
-            photoNumber: Math.floor(Math.random() * 3) + 1,
+        this.state = {
+            photoNumber: Math.floor(Math.random() * 5) + 1,
         };
     }
-    
-    componentDidMount() {
-        // setInterval(() => { 
-        //     const counter = this.getTimeLeft()
-        //     this.setState({ counter });
-        // }, 1000);
-    }
-
-    // getTimeLeft = () => {
-    //     const days = this.state.weddingDate.diff(moment(), 'days');
-    //     const hours = this.state.weddingDate.diff(moment(), 'hours');
-    //     const minutes = this.state.weddingDate.diff(moment(), 'minutes');
-    //     const seconds = this.state.weddingDate.diff(moment(), 'seconds');
-    //     return `${days}d, ${hours}h, ${minutes}m, ${seconds}s`;
-    // }
 
     render() {
         return <div className={styles.main}>
@@ -42,8 +25,8 @@ class HomePage extends BasePage {
             <div className={styles.container}>
             <NavigationBar path={this.props.location.pathname}></NavigationBar>
                 <div className={styles.content}>
-                    <img className={styles.image} src={`/assets/${this.state.photoNumber}.jpg`} />
-                    <p>{strings.homeText}</p>
+                    <img className={styles.image} src={`/assets/done${this.state.photoNumber}.jpeg`} />
+                    <p>{strings.homeTextDone}</p>
                 </div>
             </div>
             <WeddingFooter></WeddingFooter>
