@@ -17,6 +17,7 @@ OR
 yarn install
 ```
 
+
 ### Client
 
 For development:
@@ -37,6 +38,7 @@ OR
 yarn client:build
 ```
 
+
 ### Server
 
 To run the node server for React SSR:
@@ -56,6 +58,7 @@ OR
 ```
 yarn server:build
 ```
+
 
 ## Client
 
